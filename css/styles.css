@@ -328,4 +328,9 @@ nav ul li a:hover {
     .carousel {
         max-height: 400px;
     }
+
+    .reservar-cancha{
+        display: grid;
+        grid-column: 1;
+    }
 }
