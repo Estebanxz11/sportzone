@@ -1,4 +1,14 @@
 document.addEventListener('DOMContentLoaded', function() {
+
+    // menu hamburguesa
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+    const navMenu = document.querySelector('.nav-menu');
+
+    hamburgerMenu.addEventListener('click', function() {
+        navMenu.classList.toggle('active'); // Alternar la clase 'active' en el menú de navegación al hacer clic en el menú de hamburguesa
+    });
+
+
     let currentSlide = 0;
     const slides = document.querySelectorAll('.carousel img');
     const totalSlides = slides.length;

@@ -106,6 +106,7 @@ footer {
     text-align: center;
     background-color: #18528C;
     padding: 20px 0;
+    margin-top: 20px;
 }
 
 footer nav a {
@@ -263,3 +264,68 @@ body {
     cursor: pointer;
 }
 
+
+.hamburger-menu {
+    display: none; /* Oculta el menú de hamburguesa por defecto */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+}
+
+.hamburger-menu-line {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #008CBA;
+}
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: block; /* Muestra el menú de hamburguesa en dispositivos móviles */
+    }
+
+    .nav-menu {
+        display: none; /* Oculta el menú de navegación en dispositivos móviles */
+    }
+
+    .nav-menu.active {
+        display: block; /* Muestra el menú de navegación cuando se activa el menú de hamburguesa */
+    }
+
+    nav ul {
+        flex-direction: column; /* Cambia la dirección del menú a columna en dispositivos móviles */
+        padding: 20px 0;
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Añade un espacio entre los elementos del menú */
+    }
+
+    .carousel {
+        max-height: 400px;
+    }
+}
