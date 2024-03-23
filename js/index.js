@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
  // Función para generar intervalos de hora
  function generateHourOptions() {
     var select = document.getElementById("hora");
-    for (var i = 0; i < 24; i++) {
+    for (var i = 7; i <= 22; i++) {
         var hour = ("0" + i).slice(-2) + ":00"; // Añade un cero delante de las horas menores de 10
         var option = document.createElement("option");
         option.text = hour;
